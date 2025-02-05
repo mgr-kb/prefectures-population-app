@@ -27,7 +27,7 @@ type PopulationCompositionPerYear = {
   ];
 };
 
-type PopulationCompositionPerYearResponse = {
+export type PopulationCompositionPerYearResponse = {
   message: string | null;
   result: PopulationCompositionPerYear;
 };
