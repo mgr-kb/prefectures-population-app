@@ -27,7 +27,7 @@ type PopulationCompositionPerYear = {
   ];
 };
 
-type Population = {
+type PopulationCompositionPerYearResponse = {
   message: string | null;
   result: PopulationCompositionPerYear;
 };
@@ -36,7 +36,7 @@ const { baseUrl, populationCompositionPerYear } = configs;
 
 export const fetchPopulationByPrefecture = async (
   prefCode: string,
-): Promise<Population> => {
+): Promise<PopulationCompositionPerYearResponse> => {
   const params = new URLSearchParams({ prefCode });
   const res = await fetch(
     `${baseUrl}${populationCompositionPerYear.path}?${params.toString()}`,
