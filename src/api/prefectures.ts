@@ -6,7 +6,7 @@ type Prefecture = {
   /** 都道府県名 */
   prefName: string;
 };
-type PrefecturesResponse = {
+export type PrefecturesResponse = {
   message: string | null;
   /** 都道府県一覧 */
   result: Prefecture[];
