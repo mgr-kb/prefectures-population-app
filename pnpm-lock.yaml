@@ -13,9 +13,6 @@ dependencies:
     version: 18.3.1(react@18.3.1)
 
 devDependencies:
-  '@eslint/js':
-    specifier: ^9.17.0
-    version: 9.19.0
   '@types/node':
     specifier: ^22.13.1
     version: 22.13.1
@@ -28,15 +25,6 @@ devDependencies:
   '@vitejs/plugin-react-swc':
     specifier: ^3.5.0
     version: 3.7.2(vite@6.0.11)
-  eslint:
-    specifier: ^9.17.0
-    version: 9.19.0
-  eslint-plugin-react-hooks:
-    specifier: ^5.0.0
-    version: 5.1.0(eslint@9.19.0)
-  eslint-plugin-react-refresh:
-    specifier: ^0.4.16
-    version: 0.4.18(eslint@9.19.0)
   globals:
     specifier: ^15.14.0
     version: 15.14.0
@@ -982,23 +970,6 @@ packages:
   /escape-string-regexp@4.0.0:
     resolution: {integrity: sha512-TtpcNJ3XAzx3Gq8sWRzJaVajRs0uVxA2YAkdb1jm2YkPz4G6egUFAyA3n5vtEIZefPk5Wa4UXbKuS5fKkJWdgA==}
     engines: {node: '>=10'}
-    dev: true
-
-  /eslint-plugin-react-hooks@5.1.0(eslint@9.19.0):
-    resolution: {integrity: sha512-mpJRtPgHN2tNAvZ35AMfqeB3Xqeo273QxrHJsbBEPWODRM4r0yB6jfoROqKEYrOn27UtRPpcpHc2UqyBSuUNTw==}
-    engines: {node: '>=10'}
-    peerDependencies:
-      eslint: ^3.0.0 || ^4.0.0 || ^5.0.0 || ^6.0.0 || ^7.0.0 || ^8.0.0-0 || ^9.0.0
-    dependencies:
-      eslint: 9.19.0
-    dev: true
-
-  /eslint-plugin-react-refresh@0.4.18(eslint@9.19.0):
-    resolution: {integrity: sha512-IRGEoFn3OKalm3hjfolEWGqoF/jPqeEYFp+C8B0WMzwGwBMvlRDQd06kghDhF0C61uJ6WfSDhEZE/sAQjduKgw==}
-    peerDependencies:
-      eslint: '>=8.40'
-    dependencies:
-      eslint: 9.19.0
     dev: true
 
   /eslint-scope@8.2.0:
