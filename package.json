@@ -16,8 +16,11 @@
     "format:fix": "biome check --write src/"
   },
   "dependencies": {
+    "@tailwindcss/vite": "^4.0.3",
     "react": "^18.3.1",
-    "react-dom": "^18.3.1"
+    "react-dom": "^18.3.1",
+    "tailwind-merge": "^3.0.1",
+    "tailwindcss": "^4.0.3"
   },
   "devDependencies": {
     "@biomejs/biome": "1.9.4",
