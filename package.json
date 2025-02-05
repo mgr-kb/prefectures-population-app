@@ -1,5 +1,9 @@
 {
   "name": "prefectures-population-app",
+  "engines": {
+    "node": ">=22",
+    "pnpm": ">=8"
+  },
   "private": true,
   "version": "0.0.0",
   "type": "module",
