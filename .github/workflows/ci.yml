@@ -43,6 +43,8 @@ jobs:
           cache: 'pnpm'
       - run: pnpm install
       - run: pnpm build
+        env:
+          GITHUB_PAGES: true
       - name: Upload artifact
         id: deployment
         uses: actions/upload-pages-artifact@v3
