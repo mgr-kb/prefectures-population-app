@@ -18,7 +18,7 @@ export default defineConfig({
     globals: true,
     setupFiles: "./vitest.setup.ts",
     coverage: {
-      reporter: ["text", "json-summary", "html"],
+      reporter: ["text", "json-summary", "json", "html"],
       thresholds: {
         statements: 80,
       },
