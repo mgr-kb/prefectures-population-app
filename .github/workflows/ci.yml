@@ -26,8 +26,8 @@ jobs:
         run: pnpm test
 
   build:
-    # if: github.event_name == 'push'
-    # needs: test
+    if: github.event_name == 'push'
+    needs: test
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
