@@ -11,6 +11,7 @@ jobs:
     runs-on: ubuntu-latest
     permissions:
       contents: 'read'
+      pull-requests: 'write'
     steps:
       - name: Checkout
         uses: actions/checkout@v4
@@ -24,6 +25,10 @@ jobs:
       - run: pnpm install
       - name: Test
         run: pnpm test
+      - name: Report Coverage
+        uses: davelosert/vitest-coverage-report-action@v2
+        with:
+          json-summary-path: coverage/coverage-summary.json
 
   build:
     if: github.event_name == 'push'
