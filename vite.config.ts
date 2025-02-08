@@ -7,6 +7,7 @@ import { defineConfig } from "vite";
 // https://vite.dev/config/
 export default defineConfig({
   plugins: [react(), tailwindcss()],
+  base: process.env.GITHUB_PAGES ? "/prefectures-population-app/" : "",
   resolve: {
     alias: {
       "@": path.resolve(__dirname, "src"),
