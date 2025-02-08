@@ -20,7 +20,10 @@ export default defineConfig({
     coverage: {
       reporter: ["text", "json-summary", "json", "html"],
       thresholds: {
+        lines: 80,
         statements: 80,
+        functions: 80,
+        branches: 80,
       },
       include: ["src/**/*"],
       exclude: [
