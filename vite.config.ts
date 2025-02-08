@@ -19,6 +19,18 @@ export default defineConfig({
     setupFiles: "./vitest.setup.ts",
     coverage: {
       reporter: ["text", "json", "html"],
+      thresholds: {
+        statements: 80,
+      },
+      include: ["src/**/*"],
+      exclude: [
+        "src/App.tsx",
+        "src/main.tsx",
+        "src/mocks/*",
+        "src/vite-env.d.ts",
+        "**/*.stories.ts",
+        "**/*.stories.tsx",
+      ],
     },
   },
 });
