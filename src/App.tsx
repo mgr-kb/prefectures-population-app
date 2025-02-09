@@ -1,22 +1,14 @@
-import { useState } from "react";
+import { PopulationByPrefecture } from "./features/population-by-prefecture/components/PopulationByPrefecture";
 
 function App() {
-  const [count, setCount] = useState(0);
-
   return (
     <>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button type="button" onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.tsx</code> and save to test HMR
-        </p>
+      <div className="min-h-screen bg-indigo-50 p-4 sm:p-6 lg:p-8 text-gray-700">
+        <div className="max-w-7xl mx-auto space-y-6">
+          <h1 className="text-3xl font-bold">都道府県人口比較</h1>
+          <PopulationByPrefecture />
+        </div>
       </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
     </>
   );
 }
