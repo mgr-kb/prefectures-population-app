@@ -13,14 +13,14 @@ export const PrefectureItem = memo(
     return (
       <label
         htmlFor={checkboxId}
-        className="flex items-center gap-2 cursor-pointer p-2 rounded-sm hover:bg-gray-300"
+        className="flex items-center gap-2 cursor-pointer px-1 py-2 rounded-sm hover:bg-gray-300"
       >
         <Checkbox
           id={checkboxId}
           checked={checked}
           onChange={(e) => onChange(e.target.checked)}
         />
-        <span className="text-xs sm:text-md">{name}</span>
+        <span className="text-sm sm:text-lg">{name}</span>
       </label>
     );
   },

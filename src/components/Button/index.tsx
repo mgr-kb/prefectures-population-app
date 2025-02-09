@@ -13,8 +13,8 @@ export const Button = forwardRef<HTMLButtonElement, Props>(function ButtonBase(
 ) {
   const colorClass = clsx(
     variant === "primary" && "bg-blue-600 hover:bg-blue-700",
-    ["secondary", "default"].includes(variant) &&
-      "bg-gray-600 hover:bg-gray-700",
+    variant === "secondary" && "bg-red-400 hover:bg-red-500",
+    variant === "default" && "bg-gray-600 hover:bg-gray-700",
   );
   const buttonClass = cn(
     "flex items-center gap-2 cursor-pointer px-4 py-2 text-white rounded-lg transition-colors disabled:opacity-50",

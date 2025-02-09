@@ -24,9 +24,9 @@ export const PrefectureSelector: FC<PrefectureSelectorProps> = ({
   });
 
   return (
-    <div className="bg-gray-100 text-gray-700 rounded-lg shadow-md p-4">
+    <div className="bg-white text-gray-700 rounded-lg shadow-md p-4">
       <div className="mt-2">
-        <Button onClick={clearAll}>
+        <Button variant="secondary" onClick={clearAll}>
           <XCircle />
           すべてクリア
         </Button>
