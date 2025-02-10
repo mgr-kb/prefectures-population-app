@@ -125,7 +125,7 @@ const useKeyboardNavigation = (
  */
 type ListProps = {
   tabItems: {
-    id: number;
+    id: string;
     content: React.ReactNode;
   }[];
 };
@@ -152,7 +152,7 @@ const List = ({ tabItems }: ListProps) => {
  */
 type PanelListProps = {
   panelItems: {
-    id: number;
+    id: string;
     content: React.ReactNode;
   }[];
 };

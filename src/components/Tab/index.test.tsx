@@ -8,16 +8,16 @@ describe("Tab", () => {
         <Tab.Title>Tab Component</Tab.Title>
         <Tab.List
           tabItems={[
-            { id: 0, content: "Tab 1" },
-            { id: 1, content: "Tab 2" },
-            { id: 2, content: "Tab 3" },
+            { id: "0", content: "Tab 1" },
+            { id: "1", content: "Tab 2" },
+            { id: "2", content: "Tab 3" },
           ]}
         />
         <Tab.PanelList
           panelItems={[
-            { id: 0, content: "Content 1" },
-            { id: 1, content: "Content 2" },
-            { id: 2, content: "Content 3" },
+            { id: "0", content: "Content 1" },
+            { id: "1", content: "Content 2" },
+            { id: "2", content: "Content 3" },
           ]}
         />
       </Tab.Group>,
@@ -35,16 +35,16 @@ describe("Tab", () => {
         <Tab.Title>Tab Component</Tab.Title>
         <Tab.List
           tabItems={[
-            { id: 0, content: "Tab 1" },
-            { id: 1, content: "Tab 2" },
-            { id: 2, content: "Tab 3" },
+            { id: "0", content: "Tab 1" },
+            { id: "1", content: "Tab 2" },
+            { id: "2", content: "Tab 3" },
           ]}
         />
         <Tab.PanelList
           panelItems={[
-            { id: 0, content: "Content 1" },
-            { id: 1, content: "Content 2" },
-            { id: 2, content: "Content 3" },
+            { id: "0", content: "Content 1" },
+            { id: "1", content: "Content 2" },
+            { id: "2", content: "Content 3" },
           ]}
         />
       </Tab.Group>,
@@ -68,16 +68,16 @@ describe("Tab", () => {
         <Tab.Title>Tab Component</Tab.Title>
         <Tab.List
           tabItems={[
-            { id: 0, content: "Tab 1" },
-            { id: 1, content: "Tab 2" },
-            { id: 2, content: "Tab 3" },
+            { id: "0", content: "Tab 1" },
+            { id: "1", content: "Tab 2" },
+            { id: "2", content: "Tab 3" },
           ]}
         />
         <Tab.PanelList
           panelItems={[
-            { id: 0, content: "Content 1" },
-            { id: 1, content: "Content 2" },
-            { id: 2, content: "Content 3" },
+            { id: "0", content: "Content 1" },
+            { id: "1", content: "Content 2" },
+            { id: "2", content: "Content 3" },
           ]}
         />
       </Tab.Group>,
@@ -109,16 +109,16 @@ describe("Tab", () => {
         <Tab.Title>Tab Component</Tab.Title>
         <Tab.List
           tabItems={[
-            { id: 0, content: "Tab 1" },
-            { id: 1, content: "Tab 2" },
-            { id: 2, content: "Tab 3" },
+            { id: "0", content: "Tab 1" },
+            { id: "1", content: "Tab 2" },
+            { id: "2", content: "Tab 3" },
           ]}
         />
         <Tab.PanelList
           panelItems={[
-            { id: 0, content: "Content 1" },
-            { id: 1, content: "Content 2" },
-            { id: 2, content: "Content 3" },
+            { id: "0", content: "Content 1" },
+            { id: "1", content: "Content 2" },
+            { id: "2", content: "Content 3" },
           ]}
         />
       </Tab.Group>,
