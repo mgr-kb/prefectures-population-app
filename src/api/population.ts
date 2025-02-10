@@ -13,7 +13,7 @@ type PopulationData = {
   }[];
 };
 
-type PopulationCompositionPerYear = {
+export type PopulationCompositionPerYear = {
   /** 実績値と推計値の区切り年 */
   boundaryYear: number;
   data: [
