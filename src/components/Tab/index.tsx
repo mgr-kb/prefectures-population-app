@@ -59,7 +59,11 @@ const Group = ({
 const Title = ({ children }: { children: React.ReactNode }) => {
   const { titleId } = useTabContext();
 
-  return <div id={titleId}>{children}</div>;
+  return (
+    <h2 id={titleId} className="text-lg font-bold">
+      {children}
+    </h2>
+  );
 };
 
 const useKeyboardNavigation = (
@@ -212,8 +216,8 @@ const Tab = ({ children, index }: TabProps) => {
       ? "text-blue-600 bg-gray-100 font-bold"
       : "hover:text-gray-600 hover:bg-gray-50";
   const tabClasses = cn(
-    "w-1/4 border-b-2 px-1 py-4 text-center text-xs sm:text-base cursor-pointer",
     variableClasses,
+    "w-1/4 border-b-2 px-1 py-4 cursor-pointer text-center text-xs sm:text-base",
   );
 
   return (
