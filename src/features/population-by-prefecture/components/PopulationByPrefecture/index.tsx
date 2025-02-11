@@ -17,7 +17,11 @@ export const PopulationByPrefecture = () => {
     <>
       <Suspense fallback={<LoadingSpinner />}>
         <ErrorBoundary
-          fallbackRender={({ error }) => <div>{error.message}</div>}
+          fallbackRender={() => (
+            <p role="alert" className="text-red-700">
+              都道府県情報を取得できませんでした。再度お試しください。
+            </p>
+          )}
         >
           <PrefectureSelector
             selectedPrefectures={selectedPrefectures}
@@ -30,7 +34,11 @@ export const PopulationByPrefecture = () => {
 
       <Suspense fallback={<LoadingSpinner />}>
         <ErrorBoundary
-          fallbackRender={({ error }) => <div>{error.message}</div>}
+          fallbackRender={() => (
+            <p role="alert" className="text-red-700">
+              人口情報を取得できませんでした。再度お試しください。
+            </p>
+          )}
         >
           <PopulationChart selectedPrefectures={selectedPrefectures} />
         </ErrorBoundary>
