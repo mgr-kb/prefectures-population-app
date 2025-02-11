@@ -2,6 +2,7 @@ import { LoadingSpinner } from "@/components/LoadingSpinner";
 import { Suspense } from "react";
 import { ErrorBoundary } from "react-error-boundary";
 import { useSelectedPrefectures } from "../../hooks/use-selected-prefectures";
+import { PopulationChart } from "../PopulationChart";
 import { PrefectureSelector } from "../PrefectureSelector";
 
 export const PopulationByPrefecture = () => {
@@ -27,13 +28,13 @@ export const PopulationByPrefecture = () => {
         </ErrorBoundary>
       </Suspense>
 
-      {/* <Suspense fallback={<LoadingSpinner />}>
+      <Suspense fallback={<LoadingSpinner />}>
         <ErrorBoundary
           fallbackRender={({ error }) => <div>{error.message}</div>}
         >
-          <p>TODO: グラフ</p>
+          <PopulationChart selectedPrefectures={selectedPrefectures} />
         </ErrorBoundary>
-      </Suspense> */}
+      </Suspense>
     </>
   );
 };
