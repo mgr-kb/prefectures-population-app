@@ -38,7 +38,7 @@ export const fetchPopulationByPrefecture = async (
   prefCode: string,
 ): Promise<PopulationCompositionPerYearResponse> => {
   const res = await fetch(
-    `${baseUrl}${populationCompositionPerYear.path}/${prefCode}}`,
+    `${baseUrl}${populationCompositionPerYear.path}/${prefCode}`,
     {
       headers: {
         "Content-Type": "application/json",
