@@ -7,9 +7,11 @@ const { baseUrl, prefectures, populationCompositionPerYear } = configs;
 
 export const restHandlers = [
   http.get(`${baseUrl}${prefectures.path}`, () => {
+    // return HttpResponse.error();
     return HttpResponse.json(prefecturesResponse);
   }),
   http.get(`${baseUrl}${populationCompositionPerYear.path}`, () => {
+    // return HttpResponse.error();
     return HttpResponse.json(populationCompositionPerYearResponse());
   }),
 ];
