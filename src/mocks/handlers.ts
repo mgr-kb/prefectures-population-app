@@ -10,7 +10,7 @@ export const restHandlers = [
     // return HttpResponse.error();
     return HttpResponse.json(prefecturesResponse);
   }),
-  http.get(`${baseUrl}${populationCompositionPerYear.path}`, () => {
+  http.get(`${baseUrl}${populationCompositionPerYear.path}/*`, () => {
     // return HttpResponse.error();
     return HttpResponse.json(populationCompositionPerYearResponse());
   }),
