@@ -213,11 +213,11 @@ const Tab = ({ children, index }: TabProps) => {
 
   const variableClasses =
     index === activeIndex
-      ? "text-blue-600 bg-gray-100 font-bold"
-      : "hover:text-gray-600 hover:bg-gray-50";
+      ? "text-blue-500 bg-gray-300 font-bold"
+      : "text-gray-400 hover:text-gray-600 hover:bg-gray-50";
   const tabClasses = cn(
     variableClasses,
-    "w-1/4 border-b-2 px-1 py-4 cursor-pointer text-center text-xs sm:text-base",
+    "w-1/4 border-b-2 border-gray-400 px-1 py-4 cursor-pointer text-center text-xs sm:text-base",
   );
 
   return (
