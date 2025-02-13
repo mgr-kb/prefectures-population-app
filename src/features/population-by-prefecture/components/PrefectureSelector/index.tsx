@@ -25,11 +25,11 @@ export const PrefectureSelector: FC<PrefectureSelectorProps> = ({
 
   return (
     <section className="bg-white text-gray-700 rounded-lg shadow-md p-4">
-      <h2 className="text-lg font-bold">都道府県選択</h2>
-      <div className="mt-2">
+      <div className="grid grid-cols-[1fr_auto]">
+        <h2 className="text-lg font-bold">都道府県選択</h2>
         <Button variant="secondary" onClick={clearAll}>
           <XCircle />
-          すべてクリア
+          選択をクリア
         </Button>
       </div>
 
