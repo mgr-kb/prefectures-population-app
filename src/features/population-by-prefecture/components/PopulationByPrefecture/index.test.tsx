@@ -45,7 +45,7 @@ describe("PopulationByPrefecture", () => {
     await waitFor(() => {
       expect(screen.queryByTestId("loading-spinner")).not.toBeInTheDocument();
       expect(
-        screen.getByRole("button", { name: /すべてクリア/i }),
+        screen.getByRole("button", { name: /選択をクリア/i }),
       ).toBeInTheDocument();
     });
   });
