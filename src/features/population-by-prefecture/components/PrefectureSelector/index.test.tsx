@@ -102,10 +102,10 @@ describe("PrefectureSelector", () => {
     });
   });
 
-  it("「すべてクリア」のボタンをクリックすると、clearAllの関数がコールされる", async () => {
+  it("「選択をクリア」のボタンをクリックすると、clearAllの関数がコールされる", async () => {
     renderComponent([{ prefCode: 1, prefName: "北海道" }]);
 
-    const clearButton = screen.getByRole("button", { name: /すべてクリア/i });
+    const clearButton = screen.getByRole("button", { name: /選択をクリア/i });
     fireEvent.click(clearButton);
 
     expect(mockClearAll).toHaveBeenCalledTimes(1);
