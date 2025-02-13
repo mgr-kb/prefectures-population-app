@@ -95,7 +95,7 @@ const Chart: FC<ChartProps> = ({ data, prefectures }) => {
       className="bg-white rounded-lg shadow-md p-2 h-[600px] overflow-x-auto"
       data-testid="chart"
     >
-      <ResponsiveContainer height={580} width="100%" minWidth={375}>
+      <ResponsiveContainer height={580} width="100%" minWidth={800}>
         <LineChart
           data={data}
           margin={{ top: 20, right: 30, left: 20, bottom: 5 }}
